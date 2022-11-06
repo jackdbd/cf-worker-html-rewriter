@@ -1,0 +1,16 @@
+name = "cf-worker-html-rewriter"
+main = "src/index.ts"
+compatibility_date = "2022-11-06"
+
+[vars]
+QUERY_STRING_KEY = "url-to-test"
+
+[env.development]
+name = "cf-worker-html-rewriter-development"
+[env.development.vars]
+QUERY_STRING_KEY = "url-to-test"
+
+[env.production]
+name = "cf-worker-html-rewriter-production"
+[env.production.vars]
+QUERY_STRING_KEY = "url-to-test"
